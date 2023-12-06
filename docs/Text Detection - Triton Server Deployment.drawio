@@ -1,0 +1,182 @@
+<mxfile host="app.diagrams.net" modified="2023-11-16T08:30:10.852Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="qcCBe07shmbqn0Ux6HGv" version="22.1.2" type="google">
+  <diagram name="Page-1" id="5d7acffa-a066-3a61-03fe-96351882024d">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pJGyur5izn_r6B0qHhx0-4" value="TRITON SERVER" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;align=left;fontSize=22;fontStyle=1;fontColor=#004C99;strokeColor=#004C99;" vertex="1" parent="1">
+          <mxGeometry x="360.72" y="40" width="360" height="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-41" value="&amp;lt;ensembles&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=22;fontStyle=2;fontColor=#004C99;strokeColor=#004C99;" vertex="1" parent="1">
+          <mxGeometry x="410.72" y="80" width="260" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="N8TuNQROAo81aJFftls4-7" value="CLIENT" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;align=left;fontSize=22;fontStyle=1;fontColor=#CC6600;strokeColor=#CC6600;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="21ea969265ad0168-6" value="&lt;b&gt;Text Detection Model&lt;br&gt;&lt;/b&gt;(&lt;a href=&quot;https://pyimagesearch.com/2018/08/20/opencv-text-detection-east-text-detector/&quot;&gt;EAST Model&lt;/a&gt;)" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=14;swimlaneLine=1;glass=0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="430.72" y="450" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="21ea969265ad0168-7" value="|____1&lt;br style=&quot;font-size: 14px;&quot;&gt;|&lt;span style=&quot;white-space: pre; font-size: 14px;&quot;&gt;&#x9;&lt;/span&gt;|_model.onnx (original)&lt;br style=&quot;font-size: 14px;&quot;&gt;|&lt;br style=&quot;font-size: 14px;&quot;&gt;|___ 2&lt;br style=&quot;font-size: 14px;&quot;&gt;|&lt;span style=&quot;white-space: pre; font-size: 14px;&quot;&gt;&#x9;&lt;/span&gt;|_model.onnx (quantized)&lt;br style=&quot;font-size: 14px;&quot;&gt;|&lt;br style=&quot;font-size: 14px;&quot;&gt;|___ config.pbtxt" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" vertex="1" parent="21ea969265ad0168-6">
+          <mxGeometry y="40" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="21ea969265ad0168-34" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;startFill=0;startSize=8;endFill=1;endSize=8;fontFamily=Verdana;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pJGyur5izn_r6B0qHhx0-36" target="pJGyur5izn_r6B0qHhx0-16">
+          <mxGeometry x="-0.1342" y="32" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="847.4615384615386" y="740" as="sourcePoint" />
+            <mxPoint x="640" y="925.0769230769231" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="541" y="1260" />
+              <mxPoint x="390" y="1260" />
+              <mxPoint x="390" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-58" value="Parsed Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontColor=#006633;fontStyle=1" connectable="0" vertex="1" parent="21ea969265ad0168-34">
+          <mxGeometry x="0.9325" y="-1" relative="1" as="geometry">
+            <mxPoint x="89" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N8TuNQROAo81aJFftls4-1" value="" style="sketch=0;outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_registry_image;fillColor=#FFCE9F;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="N8TuNQROAo81aJFftls4-2" value="Raw Image" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N8TuNQROAo81aJFftls4-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="pJGyur5izn_r6B0qHhx0-3" target="N8TuNQROAo81aJFftls4-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540.35" y="220" as="sourcePoint" />
+            <mxPoint x="540.35" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N8TuNQROAo81aJFftls4-8" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_registry_image;" vertex="1" parent="1">
+          <mxGeometry x="500.72" y="270" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="N8TuNQROAo81aJFftls4-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="N8TuNQROAo81aJFftls4-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="160" as="sourcePoint" />
+            <mxPoint x="360" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-42" value="Text Detection Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1" connectable="0" vertex="1" parent="N8TuNQROAo81aJFftls4-13">
+          <mxGeometry x="-0.2277" y="3" relative="1" as="geometry">
+            <mxPoint x="23" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Image Pre-processing&lt;/font&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Image_Versions.svg;" vertex="1" parent="1">
+          <mxGeometry x="500.72" y="140" width="83.76" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-9" value="&lt;div&gt;&lt;b&gt;REFERENCES&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;&quot;&gt;&lt;a href=&quot;https://pyimagesearch.com/2018/08/20/opencv-text-detection-east-text-detector/&quot;&gt;OpenCV Text Detection (EAST text detector)&lt;/a&gt;&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;a href=&quot;https://github.com/clovaai/deep-text-recognition-benchmark/blob/master/README.md&quot;&gt;Deep Text Recognition&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;a style=&quot;border-color: var(--border-color);&quot; href=&quot;https://github.com/triton-inference-server/tutorials/blob/main/Conceptual_Guide/Part_1-model_deployment/README.md&quot;&gt;Text Detection Using Triton&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 14px;&quot;&gt;&lt;a href=&quot;https://github.com/triton-inference-server/tutorials/blob/main/Conceptual_Guide/Part_6-building_complex_pipelines/README.md&quot; style=&quot;font-size: 14px;&quot;&gt;Triton Server - Building Complex Pipelines&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 14px;&quot;&gt;&lt;a href=&quot;https://github.com/triton-inference-server/tutorials/blob/main/Conceptual_Guide/Part_5-Model_Ensembles/README.md&quot;&gt;Triton Server - Model Ensembles&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#E1D5E7;shape=mxgraph.archimate.representation;verticalAlign=top;align=left;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="760" y="40" width="320" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-10" value="&lt;b&gt;Text Recognition Model&lt;br&gt;&lt;/b&gt;(&lt;a href=&quot;https://github.com/clovaai/deep-text-recognition-benchmark/blob/master/README.md&quot;&gt;Deep Text Recognition&lt;/a&gt;)" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=14;swimlaneLine=1;glass=0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="430.72" y="866" width="220" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-11" value="|____1&lt;br style=&quot;font-size: 14px;&quot;&gt;|&lt;span style=&quot;white-space: pre; font-size: 14px;&quot;&gt;&#x9;&lt;/span&gt;|_model.onnx (original)&lt;br style=&quot;font-size: 14px;&quot;&gt;|&lt;br style=&quot;font-size: 14px;&quot;&gt;|___ 2&lt;br style=&quot;font-size: 14px;&quot;&gt;|&lt;span style=&quot;white-space: pre; font-size: 14px;&quot;&gt;&#x9;&lt;/span&gt;|_model.onnx (quantized)&lt;br style=&quot;font-size: 14px;&quot;&gt;|&lt;br style=&quot;font-size: 14px;&quot;&gt;|___ config.pbtxt" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" vertex="1" parent="pJGyur5izn_r6B0qHhx0-10">
+          <mxGeometry y="40" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="21ea969265ad0168-6" target="pJGyur5izn_r6B0qHhx0-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230.72" y="880" as="sourcePoint" />
+            <mxPoint x="280.72" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-16" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.text_size;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="85" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-18" value="Text Display" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="21ea969265ad0168-30" value="&lt;div style=&quot;border-color: var(--border-color); color: rgb(0, 102, 51); font-family: Helvetica; font-size: 14px;&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Text Boundary Feature&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); color: rgb(0, 102, 51); font-family: Helvetica; font-size: 14px;&quot;&gt;data_type: TYPE_FP32&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); color: rgb(0, 102, 51); font-family: Helvetica; font-size: 14px; text-align: left;&quot;&gt;dims: [ 1, 1, 32, 100 ]&lt;/div&gt;" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" vertex="1" parent="1">
+          <mxGeometry x="460.72" y="645" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-22" value="&lt;b&gt;Libraries&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;cv2&lt;br&gt;&lt;/li&gt;&lt;li&gt;time&lt;/li&gt;&lt;li&gt;tritonclient.http&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-23" value="Crop Image" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="460.72" y="730" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-24" value="scores" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="pJGyur5izn_r6B0qHhx0-23">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-25" value="geometry" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="pJGyur5izn_r6B0qHhx0-23">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pJGyur5izn_r6B0qHhx0-23" target="pJGyur5izn_r6B0qHhx0-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340.72" y="880" as="sourcePoint" />
+            <mxPoint x="390.72" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-31" value="Cropped Images" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontColor=#006633;" connectable="0" vertex="1" parent="pJGyur5izn_r6B0qHhx0-30">
+          <mxGeometry x="-0.4229" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-33" value="&lt;b&gt;Libraries&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;cv2&lt;/li&gt;&lt;li&gt;numpy&lt;/li&gt;&lt;li&gt;triton_python_backend_utils&lt;/li&gt;&lt;/ul&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="362.48" y="1300" width="222" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N8TuNQROAo81aJFftls4-8" target="21ea969265ad0168-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="541.72" y="380" as="sourcePoint" />
+            <mxPoint x="540.72" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-34" value="&lt;div style=&quot;border-color: var(--border-color); color: rgb(0, 102, 51); font-family: Helvetica; font-size: 14px;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Input Image&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;data_type: TYPE_FP32&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;dims: [ -1, -1, -1, 3 ]&lt;/div&gt;&lt;/div&gt;" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" vertex="1" parent="1">
+          <mxGeometry x="460.72" y="370" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-36" value="Parse Text" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="460.72" y="1160" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-39" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pJGyur5izn_r6B0qHhx0-10" target="pJGyur5izn_r6B0qHhx0-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320.72" y="1110" as="sourcePoint" />
+            <mxPoint x="860.72" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-20" value="&lt;div style=&quot;border-color: var(--border-color); color: rgb(0, 102, 51); font-family: Helvetica; font-size: 14px;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Text Array&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;data_type: TYPE_FP32&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;dims: [ 1, 26, 37 ]&lt;/div&gt;&lt;/div&gt;" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" vertex="1" parent="1">
+          <mxGeometry x="460.72" y="1070" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-43" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;startFill=0;startSize=8;endFill=1;endSize=8;fontFamily=Verdana;fontSize=12;dashed=1;" edge="1" parent="1" target="pJGyur5izn_r6B0qHhx0-3">
+          <mxGeometry x="-0.1342" y="32" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="360" y="160" as="sourcePoint" />
+            <mxPoint x="-49.28" y="814" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460.72" y="160" />
+              <mxPoint x="460.72" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-45" value="" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#DFDFDF;html=1;whiteSpace=wrap;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="760" y="361" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-46" value="To do list" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.topButton;strokeColor=inherit;fillColor=#F7F7F7;rSize=5;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=center;spacing=10;fontSize=14;" vertex="1" parent="pJGyur5izn_r6B0qHhx0-45">
+          <mxGeometry width="320" height="40" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-47" value="Add GUI (Flask | Gradio | Streamlit ?)" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;fontColor=inherit;html=1;shadow=0;dashed=0;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=left;spacing=10;fontSize=14;" vertex="1" parent="pJGyur5izn_r6B0qHhx0-45">
+          <mxGeometry width="320" height="30" relative="1" as="geometry">
+            <mxPoint y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-44" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/flat-business-3/512/Flat_business-40-128.png" vertex="1" parent="pJGyur5izn_r6B0qHhx0-45">
+          <mxGeometry width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-57" value="Video streaming detection" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;fontColor=inherit;html=1;shadow=0;dashed=0;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=left;spacing=10;fontSize=14;" vertex="1" parent="pJGyur5izn_r6B0qHhx0-45">
+          <mxGeometry width="320" height="30" relative="1" as="geometry">
+            <mxPoint y="70" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-59" value="Investigate &lt;a href=&quot;https://github.com/Mushroomcat9998/PaddleOCR/blob/main/doc/doc_en/multi_languages_en.md&quot;&gt;PaddleOCR&lt;/a&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;fontColor=inherit;html=1;shadow=0;dashed=0;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=left;spacing=10;fontSize=14;" vertex="1" parent="pJGyur5izn_r6B0qHhx0-45">
+          <mxGeometry width="320" height="30" relative="1" as="geometry">
+            <mxPoint y="99" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pJGyur5izn_r6B0qHhx0-60" value="..." style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;fontColor=inherit;html=1;shadow=0;dashed=0;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=left;spacing=10;fontSize=14;" vertex="1" parent="pJGyur5izn_r6B0qHhx0-45">
+          <mxGeometry width="320" height="30" relative="1" as="geometry">
+            <mxPoint y="129" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

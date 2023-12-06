@@ -1,0 +1,62 @@
+# -- Usage:
+# - Build the docker-compose file:
+# docker-compose build
+# - Run the docker-compose file:
+# docker-compose up
+# -- Stop and remove the docker-compose service:
+# docker-compose down
+
+version: '3'
+
+services:
+  text_detection_triton:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    shm_size: '1gb'
+    # -it
+    stdin_open: true
+    tty: true
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+      - "8002:8002"
+    # visible to other containers on the network
+    expose:
+      - "8000"
+      - "8001"
+      - "8002"
+    volumes:
+      - ./model_repository:/models:ro
+    entrypoint: [ bash, -l, -c]
+    command: ["tritonserver --model-repository=/models"]
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: asia.gcr.io/mles-class-01/text-detection-triton:latest
+    container_name: text-detection-triton
+    networks:
+      - "tritonnet"
+
+  app:
+    ports:
+      - "7860:7860"
+    restart: on-failure
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    image: asia.gcr.io/mles-class-01/text-detection-app:latest
+    container_name: text-detection-app
+    networks:
+      - "tritonnet"
+
+networks:
+  # The presence of these objects is sufficient to define them
+  tritonnet:
+    driver: bridge
+    name: tritonnet
